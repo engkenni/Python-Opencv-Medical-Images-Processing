@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1124</width>
+    <height>596</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1124</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>Dosya</string>
+    </property>
+    <addaction name="actionAc"/>
+    <addaction name="actionKaydet"/>
+    <addaction name="actionFarkli_Kaydet"/>
+    <addaction name="actionCikis"/>
+   </widget>
+   <widget class="QMenu" name="menuOn_Islem">
+    <property name="title">
+     <string>Ön İşlem</string>
+    </property>
+    <addaction name="actionGri_Seviye_Donusum"/>
+    <addaction name="actionHistogram_Grafigi"/>
+    <addaction name="actionEsikleme"/>
+    <addaction name="actionHistogram_E_itleme"/>
+    <addaction name="actionKontrast_Genisletme"/>
+   </widget>
+   <widget class="QMenu" name="menuFiltreleme">
+    <property name="title">
+     <string>Filtreleme</string>
+    </property>
+    <addaction name="actionOrtalama_Mean"/>
+    <addaction name="actionOrtanca_Filtre_Median"/>
+   </widget>
+   <widget class="QMenu" name="menuMorfoloji">
+    <property name="title">
+     <string>Morfoloji</string>
+    </property>
+    <addaction name="actionAsinma"/>
+    <addaction name="actionGenisleme"/>
+    <addaction name="actionAcinim"/>
+    <addaction name="actionKapanim"/>
+   </widget>
+   <widget class="QMenu" name="menuHit_Miss">
+    <property name="title">
+     <string>Hit&amp;Miss</string>
+    </property>
+    <addaction name="actionTek_nokta_bul"/>
+    <addaction name="actionUc_nokta_bul"/>
+    <addaction name="actionKesisim_nokta_bul"/>
+   </widget>
+   <widget class="QMenu" name="menuBolgesel_Genisleteme">
+    <property name="title">
+     <string>Bölgesel Genişleteme</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuGeometrik_Donusumler">
+    <property name="title">
+     <string>Geometrik Dönüşümler</string>
+    </property>
+    <widget class="QMenu" name="menuOlceklendirme">
+     <property name="title">
+      <string>Ölçeklendirme</string>
+     </property>
+    </widget>
+    <addaction name="menuOlceklendirme"/>
+    <addaction name="actionDondurme"/>
+    <addaction name="actionYansitma"/>
+   </widget>
+   <widget class="QMenu" name="menuRenk_Donusumleri">
+    <property name="title">
+     <string>Renk Dönüşümleri</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuBenzerlik">
+    <property name="title">
+     <string>Benzerlik</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuZincir_Kodlama">
+    <property name="title">
+     <string>Zincir Kodlama</string>
+    </property>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuOn_Islem"/>
+   <addaction name="menuFiltreleme"/>
+   <addaction name="menuMorfoloji"/>
+   <addaction name="menuHit_Miss"/>
+   <addaction name="menuBolgesel_Genisleteme"/>
+   <addaction name="menuRenk_Donusumleri"/>
+   <addaction name="menuGeometrik_Donusumler"/>
+   <addaction name="menuBenzerlik"/>
+   <addaction name="menuZincir_Kodlama"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionAc">
+   <property name="text">
+    <string>Aç</string>
+   </property>
+   <property name="statusTip">
+    <string>Dosyayı Aç</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+N</string>
+   </property>
+   <property name="shortcutContext">
+    <enum>Qt::WindowShortcut</enum>
+   </property>
+  </action>
+  <action name="actionKaydet">
+   <property name="text">
+    <string>Kaydet</string>
+   </property>
+   <property name="statusTip">
+    <string>Dosyayı Kaydet</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="actionFarkli_Kaydet">
+   <property name="text">
+    <string>Farklı Kaydet</string>
+   </property>
+   <property name="statusTip">
+    <string>Dosyayı Farklı Kaydet</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+S</string>
+   </property>
+  </action>
+  <action name="actionCikis">
+   <property name="text">
+    <string>Çıkış</string>
+   </property>
+   <property name="statusTip">
+    <string>Çıkış Yap</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Q</string>
+   </property>
+  </action>
+  <action name="actionGri_Seviye_Donusum">
+   <property name="text">
+    <string>Gri Seviye Dönüşüm</string>
+   </property>
+  </action>
+  <action name="actionHistogram_Grafigi">
+   <property name="text">
+    <string>Histogram Grafiği</string>
+   </property>
+  </action>
+  <action name="actionEsikleme">
+   <property name="text">
+    <string>Eşikleme</string>
+   </property>
+  </action>
+  <action name="actionHistogram_E_itleme">
+   <property name="text">
+    <string>Histogram Eşitleme</string>
+   </property>
+  </action>
+  <action name="actionKontrast_Genisletme">
+   <property name="text">
+    <string>Kontrast Genişletme</string>
+   </property>
+  </action>
+  <action name="actionOrtalama_Mean">
+   <property name="text">
+    <string>Ortalama Filtre(Mean)</string>
+   </property>
+  </action>
+  <action name="actionOrtanca_Filtre_Median">
+   <property name="text">
+    <string>Ortanca Filtre(Median)</string>
+   </property>
+  </action>
+  <action name="actionAsinma">
+   <property name="text">
+    <string>Aşınma</string>
+   </property>
+  </action>
+  <action name="actionGenisleme">
+   <property name="text">
+    <string>Genişleme</string>
+   </property>
+  </action>
+  <action name="actionAcinim">
+   <property name="text">
+    <string>Açınım</string>
+   </property>
+  </action>
+  <action name="actionKapanim">
+   <property name="text">
+    <string>Kapanım</string>
+   </property>
+  </action>
+  <action name="actionTek_nokta_bul">
+   <property name="text">
+    <string>Tek nokta bul</string>
+   </property>
+  </action>
+  <action name="actionUc_nokta_bul">
+   <property name="text">
+    <string>Uç nokta bul</string>
+   </property>
+  </action>
+  <action name="actionKesisim_nokta_bul">
+   <property name="text">
+    <string>Kesişim noktası bul</string>
+   </property>
+  </action>
+  <action name="actionDondurme">
+   <property name="text">
+    <string>Döndürme</string>
+   </property>
+  </action>
+  <action name="actionYansitma">
+   <property name="text">
+    <string>Yansıtma</string>
+   </property>
+  </action>
+  <action name="actiondaraltma">
+   <property name="text">
+    <string>daraltma</string>
+   </property>
+  </action>
+  <action name="actiongenisletme">
+   <property name="text">
+    <string>genişletme</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
