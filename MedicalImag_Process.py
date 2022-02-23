@@ -1,8 +1,8 @@
-#!/usr/bin/env python3
+
 # -*- coding: utf-8 -*-
 """
 
-@author: kk
+@author: kenni.konate
 """
 
 from PyQt5 import QtCore, QtGui, QtWidgets, uic
